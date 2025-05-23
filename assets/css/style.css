@@ -1,0 +1,461 @@
+:root {
+  --primary-color: #6c63ff;          /* Soft Indigo */
+  --primary-color-dark: #5851db;     /* Deeper Indigo */
+  --secondary-color: #ff6584;        /* Warm Coral */
+  --text-dark: #2e2e2e;              /* Rich Charcoal */
+  --text-light: #6b7280;             /* Muted Gray */
+  --extra-light: #f9fafb;            /* Off-white */
+  --bg-skyblue: #e0f7fa;             /* Light Aqua */
+  --bg-orange: #fff3e0;              /* Light Peach */
+  --bg-purple: #f3e8ff;              /* Lavender Tint */
+  --bg-contact: #f0f4f8;             /* Soft Sky Gray */
+  --max-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Outfit", sans-serif;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--extra-light);
+    z-index: 99;
+}
+
+.navContent{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: .3;
+}
+
+nav .logo a:hover{
+    color: var(--secondary-color);
+}
+
+.dark-mode {
+  --primary-color: #a78bfa;          /* Soft Violet */
+  --primary-color-dark: #7c3aed;     /* Bold Violet */
+  --secondary-color: #9b6380;        /* Rose Pink */
+  --text-dark: #f3f4f6;              /* Light Gray Text */
+  --text-light: #9ca3af;             /* Cool Gray */
+  --extra-light: #1f2937;            /* Deep Blue Gray */
+  --bg-skyblue: #0f172a;             /* Dark Blue Gray */
+  --bg-orange: #1c1c1e;              /* Jet Black */
+  --bg-purple: #2d2d3a;              /* Soft Night Purple */
+  --bg-contact: #111827;             /* True Dark */
+  background-color: #0f172a;
+  color: var(--text-dark);
+}
+
+body, section, nav, .projectCard, .contactForm button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left .3s;
+    
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700; 
+    font-size: 17px;
+}
+
+ul li a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.home {
+    background-color: var(--extra-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.homeContainer {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.subtitle{
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: .5rem;
+
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.title span{
+    font-weight: 600;
+
+}
+
+.description{
+    line-height: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.actBtn button{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+.actBtn button:hover{
+    background-color: var(--secondary-color);
+    border-color:var(--primary-color);
+}
+
+.image{
+    display: grid;
+    place-items: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 900px;
+    padding: 20px;
+    border: solid #2c2b2c;
+}
+
+.eduSection {
+    width: 100%;
+    padding: 4rem 1rem;
+    background-color: var(--bg-skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eduContainer {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+}
+
+.eduContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eduTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.eduDescription {
+    line-height: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--bg-orange);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.schoolImg {
+    display: grid;
+    place-content: center;
+}
+
+.schoolImg img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 100px;
+    border: solid blue 0.5px;
+    padding: 10px;
+}
+
+.trainSection {
+    width: 100%;
+    padding: 4rem 1rem;
+    background-color: var(--text-light); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainContainer {
+    max-width: var(--max-width);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+}
+
+.trainImage {
+    display: grid;
+    place-items: center;
+}
+
+.trainImage img {
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+
+.trainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trainTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.trainDescription {
+    line-height: 1.5rem;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.projectSection {
+    background-color: var(--bg-orange);
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.projectContainer {
+    max-width: var(--max-width);
+    width: 100%;
+    text-align: center;
+}
+
+.projectTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.projectCard {
+    background-color: var(--extra-light);
+    border: 2px solid #ddd;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    margin-bottom: 2rem;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+}
+
+.projectName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.projectDescription {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.jobSection {
+    background-color: var(--bg-purple);
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.jobContainer {
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: left;
+}
+
+.jobTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.jobDescription {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.jobList {
+    list-style: inside disc;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.contactSection {
+    background-color: var(--bg-contact);
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contactContainer {
+    max-width: var(--max-width);
+    width: 100%;
+    color: var(--extra-light);
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contactTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.contactText {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.contactForm button {
+    background-color: rgb(243, 161, 84);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: var(--secondary-color);
+}
+
+.contactInfo p {
+    margin: 0.5rem 0;
+    color: white;
+    font-size: 1rem;
+}
+
+.contactInfo a {
+    color: white;
+    text-decoration: underline;
+}
+
+#backToTop:hover {
+  color: #73afee;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+
+  <nav>
+    <div class="navContent">
+      <div class="logo"><a href="#"><i class='bx bxl-sketch'></i> James</a></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#trainings">Trainings</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#job">Job Experience</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <i id="darkModeIcon" class="bx bx-moon" onclick="toggleDarkMode()" style="cursor:pointer; font-size: 30px;"></i>
+    </div>
+  </nav>
+  <section class="homeSection" id="home">
+    <div class="homeContainer">
+      <div class="content">
+        <p class="subtitle" id="namesubtitle">Hello!</p>
+          <h1 class="title" id="nameTitle">
+            I'm <span>Kent James Indoc</span>
+          </h1>     
+        <p class="description" id="description">
+          Welcome to my personal portfolio! I'm excited to share my journey, skills, and the projects I've worked on. Explore to learn more about my background and what I bring to the table.
+        </p>
+        
+        <div class="actBtn" id="profileContainer">
+          <button class="profile" id="profileBtn">Profile</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/img/profile.jpg" alt="profile" id="mainImg" data-aos="flip-right" data-aos-duration="1500"  />
+      </div>
+    </div>
+  </section>
+
+  <section class="eduSection" id="education">
+    <div class="eduContainer" data-aos="fade-up" data-aos-duration="1500">
+      <div class="eduContent">
+        <h1 class="eduTitle">
+          CITE <span>Technical Institute</span>
+        </h1>
+        <p class="eduDescription">
+          I'm currently pursuing a degree in Computer Engineering at CITE Technical Institute. My education has equipped me with a solid foundation in both hardware and software concepts, along with hands-on experience in systems development, networking, and technical problem-solving.
+        </p>
+      </div>
+      <div class="schoolImg">
+        <img src="assets/img/cite-1.jpg" alt="CITE School Image" data-aos="fade-left" data-aos-duration="1500"/>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trainSection" id="trainings">
+    <div class="trainContainer">
+      <div class="trainImage">
+        <img src="assets/img/alliance" alt="Alliance Software" data-aos="fade-up" data-aos-duration="1500" />
+      </div>
+      <div class="trainContent">
+        <h1 class="trainTitle">Alliance Software Inc.</h1>
+        <p class="trainDescription">
+          I completed a training program at <strong>Alliance Software Inc.</strong> where I gained hands-on experience with <strong>Microsoft Power Apps</strong>. The training focused on building ticketing system with minimal code, and creating responsive app designs that integrate with Microsoft services like SharePoint and Teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="projectSection" id="projects">
+    <div class="projectContainer" data-aos="fade-up" data-aos-duration="1500">
+      <h1 class="projectTitle">Projects</h1>
+
+      <div class="projectCard">
+        <h2 class="projectName">Java Login System</h2>
+        <p class="projectDescription">
+          A simple login system built using Java as a school project. It features user authentication with username and password validation, basic UI, and secure login logic designed for desktop applications.
+        </p>
+      </div>
+
+      <div class="projectCard">
+        <h2 class="projectName">C Student Login System</h2>
+        <p class="projectDescription">
+          A login system for students built using C programming language. This project features user authentication with basic input validation, stored data using files, and a console-based user interface.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="jobSection" id="job">
+    <div class="jobContainer" data-aos="fade-up" data-aos-duration="1500">
+      <h1 class="jobTitle">Job Experience</h1>
+      <p class="jobDescription">
+        I previously worked at <strong>Kenratech Computer Trading</strong> where I gained hands-on experience as a:
+      </p>
+      <ul class="jobList">
+        <li>Computer Technician</li>
+        <li>Pisowifi Technician</li>
+        <li>CCTV Installer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contactSection" id="contact">
+    <div class="contactContainer" data-aos="zoom-in" data-aos-duration="1500">
+      <h1 class="contactTitle">Contact Me</h1>
+      <p class="contactText">Feel free to reach me out!</p>
+      
+      <form class="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contactInfo">
+        <p>Email: <a href="mailto:kentjames@email.com">james123@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639123456789">+63 912 345 6789</a></p>
+      </div>
+    </div>
+  </section>
+  <i id="backToTop" class='bx bx-up-arrow-circle' style="font-size: 50px; position: fixed; bottom: 40px; right: 40px; cursor: pointer;"></i>
+</body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="assets/js/script.js"></script>
+</html>
